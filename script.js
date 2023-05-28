@@ -1,6 +1,6 @@
 function decimalToBinary(n) {
 // write your code here
-	let ans = 0;
+	let ans = '';
 	while(n > 0){
 		const rem = n%2;
 		ans = rem + ans;
