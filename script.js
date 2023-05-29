@@ -3,7 +3,7 @@ function decimalToBinary(decimalNum) {
 	let binaryStr = '';
 	while(n > 0){
 		const rem = decimalNum % 2;
-		binaryStr = binaryStr + rem.toString();
+		binaryStr = rem.toString() + binaryStr; 
 		decimalNum = Math.floor(decimalNum/2);
 	}
 	return binaryStr;
