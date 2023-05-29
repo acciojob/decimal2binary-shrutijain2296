@@ -1,12 +1,12 @@
-function decimalToBinary(n) {
+function decimalToBinary(decimalNum) {
 // write your code here
-	let ans = '';
+	let binaryStr = '';
 	while(n > 0){
-		const rem = n%2;
-		ans = rem + ans;
-		n = Math.floor(n/2);
+		const rem = decimalNum % 2;
+		binaryStr = binaryStr + rem.toString();
+		decimalNum = Math.floor(decimalNum/2);
 	}
-	return ans;
+	return binaryStr;
 }
 
 module.exports = threeSum;
